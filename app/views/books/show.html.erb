@@ -1,0 +1,15 @@
+
+
+<div class="show-content">
+  <% if flash[:book] %>
+      <div class="flash">
+        <%= flash[:book] %>
+      </div>
+    <% end %>
+    <div  class="show-item">
+      <h5 class="show-title">Title:<%= @book.title %></h5>
+      <h5 class="show-body">Body:<%= @book.body %></h5>
+    </div>
+<%= link_to "Edit", edit_book_path%>
+<%= link_to "Back", books_path %>
+</div>
